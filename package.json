@@ -1,5 +1,5 @@
 {
-  "name": "redux-api-turtial",
+  "name": "redux-observable-api-kit",
   "version": "0.1.0",
   "dependencies": {
     "axios": "^0.18.0",
