@@ -6,12 +6,10 @@ import { Observable } from 'rxjs'
 const fetchUserEpic = action$ => {
 	return action$.ofType(FETCHING_DATA).mergeMap(action =>
 		Observable.ajax
-			.getJSON(`http://localhost:8001/profile`)
+			.getJSON(`http://localhost:8001/people`)
 			.map(response => getDataSuccess(response))
 			.catch(error => Observable.of(getDataFailure(error)))
 	)
 }
-
-
 
 export default fetchUserEpic
