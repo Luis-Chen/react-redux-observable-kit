@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { fetchData } from '../../../store/people/action'
+import { fetchData } from '../store/people/action'
 
 import Home from '../components/home'
 
